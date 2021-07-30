@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello all</title>
+</head>
+<body>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    axios.get('/get_all_events', {
+        params: {
+        start_datetime: "2021-10-05 12:00:00",
+      }    }
+).then((response) => {
+          console.log(response)
+    }).error((error) => {
+        console.log(error)
+    })
+//     axios.post('/add_recurring_timeslot', {
+//         teacher_ids: ["teacher0"],
+//         start_datetime: "2021-10-05 13:00:00",
+//         end_datetime: "2021-11-05 13:30:00",
+//         duration_minutes: 30,
+//         interval_days: 7
+//       }).then((response) => {
+//           console.log(response)
+//     }).error((error) => {
+//         console.log(error)
+//     })
+//         axios.post('/book_event_bundle', {
+//         teacher_ids: ["teacher0"],
+//             student_ids: ["student0"],
+//         start_datetime: "2021-10-05 13:00:00",
+//         duration_minutes: 30,
+//             recurrences: 2,
+//             interval_days: 7
+//       }).then((response) => {
+//           console.log(response)
+//     }).error((error) => {
+//         console.log(error)
+//     })
+
+    //     axios.post('/delete_event', {
+    //     event_id: "teacher0|2021-10-05T13:00:00",
+    //   }).then((response) => {
+    //       console.log(response)
+    // }).error((error) => {
+    //     console.log(error)
+    // })
+
+    //     axios.post('/add_teacher', {
+    //     teacher_id: "teacher0",
+    //         first_name: "Johnny",
+    //         last_name: "Cash",
+    //         age: 64,
+    //         email: "nine@inch.nails",
+    //         phone_number:"054599999",
+    //         bio: "slick",
+    //         interests: ["guitar", "singing"]
+    //   }).then((response) => {
+    //       console.log(response)
+    // }).error((error) => {
+    //     console.log(error)
+    // })
+
+    //     axios.post('/add_student', {
+    //     student_id: "student0",
+    //         first_name: "Johna",
+    //         last_name: "Hill",
+    //         age: 23,
+    //         email: "nine@inch.nails",
+    //         phone_number:"054599439",
+    //         interests: ["guitar", "running"],
+    //         gender: "Male"
+    //   }).then((response) => {
+    //       console.log(response)
+    // }).error((error) => {
+    //     console.log(error)
+    // })
+</script>
+
+</html>
